@@ -4,21 +4,22 @@ title: Checkdesk for Jira
 
 # Checkdesk for Jira
 
-Checklists that behave like the rest of Jira: progress is a real field, and required items can block a transition.
-resolved in both directions.
+Checklists that behave like the rest of Jira: progress is a real field, and required items can
+block a transition.
 
 An Atlassian Forge app by **DataForte AB**, available on the Atlassian Marketplace.
 
 ## What it does
 
-- A your data platform alert creates a Jira issue with level, environment, event count, culprit and a link back.
-- The same error recurring comments on the existing issue with an updated count, instead of filling
-  your backlog with duplicates.
-- Moving the Jira issue to a done status resolves it in your data platform; resolving in your data platform leaves a note on
-  the Jira issue.
-- Rules per your data platform project decide the target Jira project, issue type, minimum event count, levels
-  and environments.
-- An hourly reconciliation scan picks up anything a dropped webhook would have lost.
+- Adds a checklist to the Jira issue, in both the new and the classic issue view.
+- Writes progress ("3/5 (60%)") into a Jira custom field you own, so it works in JQL, filters,
+  boards, dashboards and automation — not only inside our panel.
+- A workflow validator can stop a transition while required items are still unchecked, so
+  "definition of done" is enforced rather than suggested.
+- Templates per project apply themselves the first time someone opens an issue, so the checklist
+  is already there when the work starts.
+- Runs entirely on Atlassian Forge with **no external calls** — nothing about your issues leaves
+  Atlassian, and there is no server to run.
 
 ## Pages
 
